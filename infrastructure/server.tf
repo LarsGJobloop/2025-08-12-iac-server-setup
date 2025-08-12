@@ -4,6 +4,8 @@ resource "hcloud_server" "server" {
   server_type = "cx22" # 2 vCPU, 4GB RAM, 40GB SSD
   image = "debian-12"
 
+  user_data = file("cloud-config.yaml")
+
   ssh_keys = [
     hcloud_ssh_key.server_key.id 
   ]
