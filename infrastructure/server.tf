@@ -8,3 +8,8 @@ resource "hcloud_server" "server" {
     hcloud_ssh_key.server_key.id 
   ]
 }
+
+output "server_detail" {
+  description = "All the server details"
+  value = hcloud_server.server
+}
