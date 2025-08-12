@@ -1,0 +1,5 @@
+# Ignore temporory files
+.terraform
+
+# Ignore variable files
+*.tfvars
