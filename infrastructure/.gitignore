@@ -4,6 +4,9 @@
 # Ignore variable files
 *.tfvars
 
+# Ingore statefiles
+*tfstate*
+
 # Ignore SSH keys
 ssh-identity
 ssh-identity.pub
