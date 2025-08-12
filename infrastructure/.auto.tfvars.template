@@ -1,1 +1,2 @@
 hcloud_token = "past your token here"
+ssh_key = "your public ssh key part here"

@@ -3,3 +3,7 @@
 
 # Ignore variable files
 *.tfvars
+
+# Ignore SSH keys
+ssh-identity
+ssh-identity.pub
