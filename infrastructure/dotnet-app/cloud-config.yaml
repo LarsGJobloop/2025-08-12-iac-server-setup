@@ -26,3 +26,5 @@ runcmd:
     dotnet build --configuration Release --output out src/Api.csproj
 
   # Start the server
+  - |
+    dotnet /app-repo/out/Api.dll
