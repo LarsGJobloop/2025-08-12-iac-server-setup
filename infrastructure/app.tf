@@ -32,3 +32,8 @@ module "app" {
   # Debug Key
   ssh_key = var.ssh_key
 }
+
+output "app_ip_adddres" {
+  description = "The application servers IP address"
+  value       = module.app.server_detail.ipv4_address
+}
