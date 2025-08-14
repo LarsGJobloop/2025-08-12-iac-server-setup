@@ -13,3 +13,12 @@ runcmd:
   - |
     sudo apt-get update && \
     sudo apt-get install -y dotnet-sdk-9.0
+
+  # Clone the repository
+  - |
+    mkdir /app-repo
+    git clone https://github.com/LarsGJobloop/2025-08-12-iac-server-setup.git /app-repo
+
+  # Build the project
+
+  # Start the server
