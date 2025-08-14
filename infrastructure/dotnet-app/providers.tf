@@ -6,13 +6,3 @@ terraform {
     }
   }
 }
-
-variable "hcloud_token" {
-  description = "Hetzner API token"
-  type        = string
-  sensitive   = true
-}
-
-provider "hcloud" {
-  token = var.hcloud_token
-}
