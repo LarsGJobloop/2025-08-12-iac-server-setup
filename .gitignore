@@ -1,3 +1,6 @@
 # Ignore intermidate files
 bin
 obj
+
+# Ignore build artefect
+out
