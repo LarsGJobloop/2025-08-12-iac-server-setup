@@ -20,5 +20,9 @@ runcmd:
     git clone https://github.com/LarsGJobloop/2025-08-12-iac-server-setup.git /app-repo
 
   # Build the project
+  - |
+    cd /app-repo
+    dotnet restore
+    dotnet build --configuration Release --output out src/Api.csproj
 
   # Start the server
