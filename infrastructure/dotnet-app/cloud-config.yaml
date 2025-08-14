@@ -1,5 +1,8 @@
 #cloud-config
 
+packages:
+  - git
+
 runcmd:
   # Trust the microsoft repository
   - |
