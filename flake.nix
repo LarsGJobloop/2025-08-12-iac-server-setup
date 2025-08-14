@@ -31,7 +31,12 @@
         default = pkgs.mkShell {
           packages = with pkgs; [
             terraform
+            dotnetCorePackages.sdk_9_0
           ];
+        };
+
+        env = {
+          DOTNEtDOTNET_ROOT = builtins.toString pkgs.dotnetCorePackages.sdk_9_0;
         };
       });
 
